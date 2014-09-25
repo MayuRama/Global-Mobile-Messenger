@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    tools:context=".MainActivity" 
+    android:background="#f2fcf8">
+    
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#f2fcf8" >
+
+        <AbsoluteLayout
+            android:layout_width="306dp"
+            android:layout_height="447dp"
+            android:layout_x="7dp"
+            android:layout_y="8dp"
+            android:background="#dfe3e1"
+            android:orientation="vertical" >
+		
+
+			<EditText
+			    android:id="@+id/txtquestion"
+			    android:layout_width="284dp"
+			    android:layout_height="wrap_content"
+			    android:layout_x="10dp"
+			    android:layout_y="20dp"
+			    android:gravity="top|left"
+			    android:lines="4"
+			    android:maxLines="10"  
+			    android:ems="10"
+			    android:hint="Please Describe your problem"
+			    android:inputType="textMultiLine" > 
+			</EditText>
+	
+			<Button
+			    android:id="@+id/btnfaq"
+			    android:layout_width="284dp"
+			    android:layout_height="wrap_content"
+			    android:layout_x="10dp"
+			    android:layout_y="130dp"
+			    android:text="Have you read our FAQ yet?" />
+			
+			<AbsoluteLayout
+	            android:layout_width="284dp"
+	            android:layout_height="200dp"
+	            android:layout_x="10dp"
+	            android:layout_y="210dp"
+	            android:background="#f9fafe"
+	            android:orientation="vertical" >
+
+				<TextView
+				    android:id="@+id/textView1"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_x="15dp"
+				    android:layout_y="10dp"
+				    android:text="Add screenshots (Optional):" />
+				<View
+				    android:layout_width="250dp"
+				    android:layout_height="1dip"
+				    android:layout_x="15dp"
+				    android:layout_y="32dp"
+				    android:background="#000000" />
+				
+				<ImageView
+				    android:id="@+id/imageView1"
+				    android:layout_width="80dp"
+				    android:layout_height="140dp"
+				    android:layout_x="10dp"
+				    android:layout_y="40dp"
+				    android:src="@drawable/image_button_action"
+				    android:clickable="true" />
+				
+				
+				<ImageView
+				    android:id="@+id/imageView2"
+				    android:layout_width="80dp"
+				    android:layout_height="140dp"
+				    android:layout_x="100dp"
+				    android:layout_y="40dp"
+				    android:src="@drawable/image_button_action" />
+				<ImageView
+				    android:id="@+id/imageView3"
+				    android:layout_width="80dp"
+				    android:layout_height="140dp"
+				    android:layout_x="190dp"
+				    android:layout_y="40dp"
+				    android:src="@drawable/image_button_action" />
+
+				
+	            
+			</AbsoluteLayout>
+		
+        </AbsoluteLayout>
+        
+    </AbsoluteLayout>
+</RelativeLayout>
+

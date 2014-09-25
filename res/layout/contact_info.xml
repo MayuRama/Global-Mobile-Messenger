@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2fcf8" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="2dp"
+            android:layout_y="13dp"
+            android:text="Global Messenger will send a one time SMS message to verify your phone number. Carrier SMS charges may apply."
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666666" />
+ 
+        <Button
+            android:id="@+id/btnContinue"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:layout_x="105dp"
+            android:layout_y="283dp"
+            android:background="#3678f2"
+            android:text="Continue"
+            android:textColor="#ffffff" />  
+
+        <EditText
+            android:id="@+id/txtPhoneNo"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_x="113dp"
+            android:layout_y="214dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone" />
+        
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="65dp"
+            android:layout_height="40dp"
+            android:layout_x="22dp"
+            android:layout_y="111dp"
+            android:entries="@array/CountryCodes"
+            android:prompt="@string/country_prompt"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/txtCounCode"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_x="40dp"
+            android:layout_y="212dp"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="26dp"
+            android:layout_y="224dp"
+            android:text="+"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_x="0dp"
+            android:layout_y="342dp"
+            android:background="#2295cd" />
+
+        <AutoCompleteTextView
+            android:id="@+id/txtCountryName"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_x="23dp"
+            android:layout_y="160dp"
+            android:ems="10"
+            android:hint="Country" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <ImageView
+            android:id="@+id/imgViewFlag"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_x="229dp"
+            android:layout_y="171dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="118dp"
+            android:layout_y="434dp"
+            android:text="2014 © Global "
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="-1dp"
+            android:layout_y="107dp"
+            android:text="Please confirm your country code and enter your phone number."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#666666" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>

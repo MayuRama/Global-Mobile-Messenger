@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/etRem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="Title" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etDes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etRem"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Description" />
+
+    <ImageButton
+        android:id="@+id/openContactList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etDes"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/peopleicon" />
+
+    <EditText
+        android:id="@+id/etConName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/openContactList"
+        android:layout_toRightOf="@+id/openContactList"
+        android:ems="10"
+        android:hint="Contact Name" />
+
+    <EditText
+        android:id="@+id/etConNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etConName"
+        android:layout_below="@+id/etConName"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Contact Number" />
+
+</RelativeLayout>

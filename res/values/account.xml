@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Account">
+        <item name="privacy">Privacy</item>
+        <item name="Payment_info">Payment Info</item>
+        <item name="ChangeNum_1">Change Number</item>
+        <item name="Delete my account">Delete my account</item>
+      
+   </string-array>
+   </resources>
+    

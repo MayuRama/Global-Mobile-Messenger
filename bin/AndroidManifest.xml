@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sck.maininterface"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="18" />
+    <uses-permission android:maxSdkVersion="19" android:name="android.permission.READ_CONTACTS"/>
+      <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	
+    <permission
+        android:name="in.wptrafficanalyzer.locationautogooglemapv2.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="in.wptrafficanalyzer.locationautogooglemapv2.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    
+        
+    
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.sep.global_welcome.Welcome"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Holo.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.sck.maininterface.MessageActivity"
+            android:parentActivityName="com.sck.maininterface.Main"></activity>
+        <activity android:name="com.sck.maininterface.Attach"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog"></activity>
+        <activity android:name="com.sck.maininterface.Settings"
+            android:parentActivityName="com.sck.maininterface.Main"></activity>
+        <activity android:name="com.sck.maininterface.Status"
+            android:parentActivityName="com.sck.maininterface.Main"></activity>
+        <activity android:name="com.sck.maininterface.Help"
+            android:parentActivityName="com.sck.maininterface.Settings"></activity>
+        <activity android:name="com.sck.maininterface.Contacts"
+            android:parentActivityName="com.sck.maininterface.Settings"></activity>
+         <activity android:name="com.sck.maininterface.contactslist.ui.ContactsListActivity"
+            android:parentActivityName="com.sck.maininterface.Help"></activity>
+         <activity android:name="com.sck.maininterface.navio.MainActivity"
+            android:parentActivityName="com.sck.maininterface.Main"></activity>
+          <activity android:name="com.sep.global_welcome.TermsAndConditions"
+              android:parentActivityName="com.sep.global_welcome.Welcome"
+            ></activity>
+          <activity android:name="com.sep.global_welcome.InternetError"
+            ></activity>
+          <activity android:name="com.sep.global_welcome.SimCardError"
+            ></activity>
+          <activity android:name="com.sep.global_welcome.MainActivity"
+            ></activity>
+           <activity android:name="com.sep.global_welcome.ContactInforActivity"
+            ></activity>
+           <activity android:name="com.sep.global_welcome.editNameActivity"
+               android:parentActivityName="com.sep.global_welcome.MainActivity"
+            ></activity>
+           <activity android:name="com.sep.global_welcome.enlageImageActivity"
+            android:parentActivityName="com.sep.global_welcome.MainActivity"
+            ></activity>
+            <activity android:name="com.sep.global_welcome.VerifyActivity"
+               android:theme="@android:style/Theme.Holo.Dialog" 
+            ></activity>
+            <activity android:name="com.sck.maininterface.Main"></activity>
+             <activity android:name="com.sck.maininterface.About"
+                 android:theme="@android:style/Theme.Holo.NoActionBar"
+            ></activity>
+             <activity android:name="com.sck.maininterface.Account"
+              android:parentActivityName="com.sck.maininterface.Settings"
+            ></activity>
+             <activity android:name="com.sck.maininterface.ChangeNum_1"
+              android:parentActivityName="com.sck.maininterface.Account"
+            ></activity>
+             <activity android:name="com.sck.maininterface.ChangeNum_2"
+              android:parentActivityName="com.sck.maininterface.Account"
+            ></activity>
+             <activity android:name="com.sck.maininterface.ContactUs1"
+              android:parentActivityName="com.sck.maininterface.Help"
+            ></activity>
+             <activity android:name="com.sck.maininterface.ChatSettings"
+              android:parentActivityName="com.sck.maininterface.Settings"
+            ></activity>
+             <activity android:name="com.sck.maininterface.Introduction"
+                   android:theme="@android:style/Theme.Holo.Light.Dialog"
+            ></activity>
+             <activity android:name="com.sck.maininterface.Wallpaper"
+            ></activity>
+             <activity android:name="com.sck.maininterface.contactslist.ui.ContactDetailActivity"
+            android:parentActivityName="com.sck.maininterface.Help"></activity>
+            
+             <activity android:name="com.sep.buyphonenumber.BuyPhoneMainActivity"
+            ></activity>
+            <activity android:name="com.sep.buyphonenumber.ConfirmPurchaseActivity"
+            ></activity>
+             <activity android:name="com.sep.buyphonenumber.DisplayNumbersActivity"
+            ></activity>
+           
+             <activity
+            android:name="com.sck.maininterface.navio.NotificationView"
+            android:label="LBS" >
+            <intent-filter >
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+           
+        
+        <activity
+            android:name="com.sck.maininterface.navio.ProximityActivity"
+            android:label="LBS" >
+             <intent-filter >
+                <action android:name="com.sck.maininterface.navio.activity.proximity"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+      
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBbhvzqzai5BCFpuTM_qFrSAxNBvENRsDQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+               <activity
+            android:name=".PaymentInfo"
+            android:label="@string/title_activity_payment_info" >
+        </activity>
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false" />
+                <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.LoginActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentMethodActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.PayPalFuturePaymentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentConsentActivity" />
+        <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="io.card.payment.DataEntryActivity" />
+        <activity
+            android:name=".Notifications"
+            android:label="@string/title_activity_notifications" >
+        </activity>
+         <activity
+            android:name=".ShopItemDescriptionFragment"
+            android:label="@string/title_activity_shop_item_description_fragment" >
+        </activity>
+        <activity
+            android:name=".ShopItemFragment"
+            android:label="@string/title_activity_shop_item_fragment" >
+        </activity>
+        <activity
+            android:name=".EmailConversation"
+            android:label="@string/title_activity_email_conversation" >
+        </activity>
+        <activity
+            android:name=".MyBackupAgent"
+            android:label="@string/title_activity_my_backup_agent" >
+        </activity>
+
+        <receiver android:name=".AlarmReceiver" />
+
+        <activity
+            android:name=".GplusLogin"
+            android:label="@string/title_activity_gplus_login" 
+            android:parentActivityName="com.sep.global_welcome.MainActivity">
+        </activity>
+         
+        
+    </application>
+
+</manifest>

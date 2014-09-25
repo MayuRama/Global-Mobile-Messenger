@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="status">
+    <item name="available">Available</item>
+    <item name="busy">Busy</item>
+    <item name="at_school">At School</item>
+    <item name="at_the_movies">At the movies</item>
+    <item name="at_work">At work</item>
+    <item name="battery_about_to_die">Battery about to die</item>
+    
+    </string-array>
+    
+    
+</resources>

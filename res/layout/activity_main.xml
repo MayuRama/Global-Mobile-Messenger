@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2fcf8"
+    tools:context=".MainActivity" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#f2fcf8" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_x="-2dp"
+            android:layout_y="252dp"
+            android:background="#dfe3e1"
+            android:orientation="vertical" >
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="196dp"
+                    android:layout_height="wrap_content"
+                    android:layout_x="40dp"
+                    android:layout_y="25dp"
+                    android:background="#f2fcf8"
+                    android:clickable="false"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="Name" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/imageButton1"
+                    android:layout_width="42dp"
+                    android:layout_height="35dp"
+                    android:layout_x="242dp"
+                    android:layout_y="15dp"
+                    android:src="@drawable/edit" />
+            </AbsoluteLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_x="-2dp"
+            android:layout_y="334dp"
+            android:background="#2295cd" />
+
+        <Button
+            android:id="@+id/btnGooglePlus"
+            android:layout_width="150dp"
+            android:layout_height="60px"
+            android:layout_x="89dp"
+            android:layout_y="340dp"
+            android:background="#C23322"
+            android:drawableLeft="@drawable/ic_googleplus2"
+            android:gravity="left|center_vertical"
+            android:text="Google Plus"
+            android:textColor="@android:color/white" />
+        <!--
+              <ImageButton
+            android:id="@+id/editProImage"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_x="82dp"
+            android:layout_y="188dp"
+            android:src="@drawable/edit_image_b" />
+        -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="233dp"
+            android:layout_height="wrap_content"
+            android:layout_x="45dp"
+            android:layout_y="400dp"
+            android:text="This name is the visible name for other users, this is not the user id."
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginTop="18dp"
+            android:layout_x="88dp"
+            android:layout_y="27dp"
+            android:background="@drawable/imageboarder"
+            android:src="@drawable/profile_image_action" 
+            android:clickable="true"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:layout_x="89dp"
+            android:layout_y="174dp"
+            android:text="Edit" />
+    </AbsoluteLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2fcf8"
+    android:orientation="vertical" >
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.67"
+        android:background="#f2fcf8" >
+
+        <View
+            android:layout_width="324dp"
+            android:layout_height="1dip"
+            android:layout_x="0dp"
+            android:layout_y="250dp"
+            android:background="#2295cd" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_x="32dp"
+            android:layout_y="272dp"
+            android:text="This change will not effect to your User Name. It changes only the Visible name"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        
+        <!--  
+
+        <ImageButton
+            android:id="@+id/editNameCancel"
+            android:layout_width="94dp"
+            android:layout_height="42dp"
+            android:layout_x="58dp"
+            android:layout_y="183dp"
+            android:src="@drawable/cancel" /> 
+
+        <ImageButton
+            android:id="@+id/editNameOk"
+            android:layout_width="89dp"
+            android:layout_height="42dp"
+            android:layout_x="158dp"
+            android:layout_y="183dp"
+            android:src="@drawable/ok" />  -->
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="251dp"
+            android:layout_height="54dp"
+            android:layout_x="41dp"
+            android:layout_y="82dp"
+            android:ems="10"
+            android:hint="Name" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="56dp"
+            android:layout_y="20dp"
+            android:text="Please provide your name"
+            android:textColor="#666666"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </AbsoluteLayout>
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+	<ScrollView android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         > 
+        
+	    <RelativeLayout
+	        android:id="@+id/scrol1"
+	        android:layout_width="match_parent"
+	        android:layout_height="503dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:text="Welcome to the Alpha Release of Global Messenger."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:text="This app allows you to send text and multimedia messages to any device around the globe."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:textColor="#666666"
+        android:text="Ok" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:text="However since this is the alpha release, this app won&apos;t be able to perform all the functionalities."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="24dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:text="Basically this release is not for the commercial use but for the developers and testers. Therefore sorry for the inconveniences you may face while using this app. "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:text="The Global Messenger Team."
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="26dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Okey! Got it."
+        android:textSize="16sp" 
+        />
+    
+    </RelativeLayout>
+    </ScrollView>   
+
+</RelativeLayout>

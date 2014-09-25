@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C7C3C3"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".PaymentInfo" >
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:background="#F8F8FF" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="175dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center_vertical"
+                        android:text="Phone number"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textPhoneNo"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical|right"
+                        android:textColor="#1874CD"
+                        android:textSize="15sp" 
+                        android:textAlignment="gravity"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="175dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dp"
+                        android:gravity="center_vertical"
+                        android:text="Service expiration"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textExpDate"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="right"
+                        android:gravity="center_vertical|right"
+                        android:textColor="#1874CD"
+                        android:textSize="15sp" 
+                        android:textAlignment="gravity"/>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/darker_gray" />
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:background="#F8F8FF" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/rgOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbnOneyear"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="1 Year\n US $0.99" />
+
+                    <RadioButton
+                        android:id="@+id/rbnThryear"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="3 Years \n US $2.67" />
+                    <!-- android:drawableBottom="?android:attr/listChoiceIndicatorSingle" -->
+
+                    <RadioButton
+                        android:id="@+id/rbnFveyear"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:button="@null"
+                        android:drawableBottom="@android:drawable/btn_radio"
+                        android:gravity="center_horizontal|bottom"
+                        android:text="5 Years \n US $3.71" />
+                    <!-- android:drawableBottom="@android:drawable/btn_radio" -->
+
+                </RadioGroup>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_paypal2"
+                    android:onClick="onBuyPressed"
+                    android:text="@string/paymentWay1" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+
+                <Button
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_google_wallet2"
+                    android:text="@string/paymentWay2" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_text" />
+    </LinearLayout>
+
+</ScrollView>

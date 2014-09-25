@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Contacts">
+        <item name="tell_a_friend">Tell a friend</item>
+        
+        
+   </string-array>
+    
+    
+</resources>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding"
+    android:paddingBottom="@dimen/padding"
+    android:orientation="vertical" >
+ 
+    <TextView 
+        android:id="@+id/invite_friends_header"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="@string/invite_text"
+        style="@style/addressHeader"/>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="middle"
+        android:dividerPadding="12dp"
+        android:minHeight="48dp"
+        android:divider="?android:attr/listDivider">
+        
+     <!-- <TextView
+            android:id="@+id">
+            
+            </TextView> -->  
+            
+        <ImageButton
+            android:id="@+id/button_invite_mail"
+            android:background="@drawable/ic_action_mail"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:layout_marginLeft="15dp"      
+            android:layout_gravity="center"
+            android:contentDescription="@string/mail_button_description" 
+            >
+            </ImageButton> 
+            <ImageButton
+                android:id="@+id/button_invite_message"
+                android:layout_height="35dp"
+            	android:layout_width="35dp"
+            	android:layout_marginLeft="45dp"      
+           		android:layout_gravity="bottom"
+           		android:background="@drawable/ic_action_inv_message"
+           		android:text="Message"
+            	>
+            </ImageButton>
+        </LinearLayout>
+
+    
+    
+</LinearLayout>

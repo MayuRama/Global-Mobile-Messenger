@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:padding="10dp" 
+    android:background="#f2fcf8" >
+
+    <!--  
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" > -->
+
+           
+        
+        <!-- 
+    </AbsoluteLayout>  -->
+
+            <EditText
+                android:id="@+id/txtVerify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Verification code"
+                android:inputType="number"
+                android:textColor="#000000" >
+             <requestFocus />
+             </EditText>
+			<!-- 
+            <Button
+                android:id="@+id/btnVerifyNewNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtVerify"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="Verify" />
+			 --> 
+</RelativeLayout>

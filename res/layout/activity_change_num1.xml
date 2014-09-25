@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   
+    tools:context=".MainActivity" 
+    android:background="#f2fcf8">
+    
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#f2fcf8" >
+
+        <AbsoluteLayout
+            android:layout_width="306dp"
+            android:layout_height="447dp"
+            android:layout_x="7dp"
+            android:layout_y="8dp"
+            android:background="#dfe3e1"
+            android:orientation="vertical" >
+		<!-- old phone number section start -->
+		<TextView
+                android:id="@+id/textView2"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="150dp"
+                android:text="Changing your phone number will migrate your account info, group and settings"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+                android:id="@+id/textView2"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="210dp"
+                android:text="Before proceeding, please confirm that your are able to receive SMS at your new number"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+		
+		<TextView
+                android:id="@+id/textView2"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_x="10dp"
+                android:layout_y="270dp"
+                android:text="If you have both new phone and a new number, first change your number on your old phone"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            
+            <!-- new phone number section end -->
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_x="83dp"
+		    android:layout_y="43dp"
+		    android:src="@drawable/change" />
+
+        </AbsoluteLayout>
+        
+    </AbsoluteLayout>
+</RelativeLayout>
+

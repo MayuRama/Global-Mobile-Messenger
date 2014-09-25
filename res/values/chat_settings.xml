@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Chat_Settings">
+        <item name="Wallpaper">Wallpaper</item>
+        <item name="Email_conversation">Email Conversation</item>
+        <item name="Delete_all_conversation">Delete all Conversations</item>
+        
+   </string-array>
+    
+    
+</resources>
+

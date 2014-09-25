@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sttings">
+    <item name="help">Help</item>
+    <item name="profile">Profile</item>
+    <item name="account">Account</item>
+    <item name="chat_settings">Chat Settings</item>
+    <item name="notifications">Notifications</item>
+    <item name="contacts">Contacts</item>
+    
+    </string-array>
+    
+</resources>
